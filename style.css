@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, a{
+    font-family: 'Oswald';
+}
+
+p {
+    font-family: 'Bai Jamjuree';
+    color: #3A2416;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #FFF7EF;
+} 
+
+main{
+    margin-right: 190px;
+    margin-left: 190px;
+}
+
+/* Navigationsmenu START */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF7EF;
+    border: 3px #3A2416;
+    box-shadow: 0 5px 10px #3A2416;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+header .logo{
+    width: 100px;
+    margin-left: 20px;
+}
+
+.mainmenu{
+    margin-right: 30px;
+}
+
+.submenu{
+    border: 1.5px solid #3A2416;
+    box-shadow: 0 5px 10px #3A2416;
+}
+
+header .navbar ul{
+    list-style: none;
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 10px;
+    color: #2F4680;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background: #2F4680;
+    color: #FFF7EF;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #FFF7EF;
+    display: none;
+} 
+
+header .navbar ul li ul li{
+    width: 100%;
+} 
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+.soeg{
+    height: 30px;
+    margin-right: 50px;
+}
+
+/* Navigationsmenu SLUT */
+
+/* ---------- Main content forside START ---------- */
+/* Velkommen START*/
+
+.dessert{
+    margin-top: 15px;
+}
+
+.dessertbillede{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.velkommen_h1{
+    margin-top: 100px;
+    margin-left: 110px;
+    margin-right: 110px;
+    color: #3A2416;
+    text-align: center;
+    font-size: 50px;
+}
+
+.velkommen_h3{
+    margin-top: 5px;
+    margin-left: 110px;
+    margin-right: 110px;
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    color: #3A2416;
+    text-align: center;
+}
+
+.velkommen_p{
+    margin-top: 15px;
+    margin-left: 110px;
+    margin-right: 110px;
+    word-spacing: 2px;
+    line-height: 38px;
+    font-size: 22.5px;
+    text-align: center;
+}
+/* Velkommen SLUT*/
+
+/* Nyeste artikler START */
+
+.nyeste_artikler{
+    margin-top: 30px;
+    margin-left: 110px;
+    font-size: 30px;
+    color: #3A2416;
+}
+
+/* Flexbox START */
+
+.thumbnail-grid {
+	user-select: none
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+    margin-left: 100px;
+    margin-right: 110px;
+    margin-bottom: 100px;
+}
+
+.flex-item {
+	flex: 1 0 auto
+}
+
+.thumbnail-grid figure {
+	position: relative;
+	height: 200px;
+	margin: 10px;
+	border-radius: 3px;
+	box-shadow: inset 0 -50px 0 0 #3a2416b9;
+	transition: all .9s ease-in-out
+}
+
+.thumbnail-grid figure:hover {
+	box-shadow: inset 0 -200px 0 0 #3a2416b9;
+}
+
+.thumbnail-grid figcaption {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	color: #FFF7EF;
+	text-shadow: 0 0 3px #3A2416;
+	bottom: 10px;
+	transition: all .7s ease-in-out;
+    font-size: 20px;
+}
+
+.thumbnail-grid figure:hover figcaption {
+	bottom: 85px;
+}
+
+* {
+	box-sizing: border-box
+}
+
+.thumbnail-grid figure.i1 {
+	background: url(img/frugt3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.thumbnail-grid figure.i2 {
+	background: url(img/kage3.jpg) no-repeat center;
+	background-size: cover
+}
+
+.thumbnail-grid figure.i3 {
+	background: url(img/smeg.jpg) no-repeat center;
+	background-size: cover
+}
+/* flexbox SLUT */
+/* Nyeste artikler SLUT */
+/* ---------- Main content forside SLUT ---------- */
+
+/* ---------- Main content artikel 1 START ---------- */
+/* Intro START */
+
+.artikel1_h1{
+    padding-top: 120px;
+    margin-left: 110px;
+    margin-right: 110px;
+    text-align: center;
+    color: #3A2416;
+}
+
+.artikel1_h3{
+    margin-top: 10px;
+    margin-left: 110px;
+    margin-right: 110px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    color: #3A2416;
+}
+
+.list_h4{
+    margin-top: 40px;
+    margin-left: 110px;
+    margin-right: 110px;
+    color: #3A2416;
+    font-size: 20px;
+}
+
+.list{
+    margin-top: 5px;
+    margin-left: 140px;
+    margin-right: 110px;
+    font-family: 'Bai Jamjuree';
+    line-height: 25px;
+}
+/* Intro SLUT*/
+
+/* Råvarer START*/
+.flexcontainer_saeson{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    flex-direction: row;
+}
+
+.frugt{
+    width: 300px;
+}
+
+.artikel1_h4{
+    color: #3A2416;
+    font-size: 20px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
+.artikel1_p{
+    margin-left: 10px;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+/* Råvarer SLUT*/
+
+/* Dessert inspiration START*/
+
+.flexcontainer_inspiration{
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list_dessert{
+    margin-top: 5px;
+    margin-left: 25px;
+    font-family: 'Bai Jamjuree';
+    line-height: 25px;
+}
+
+/* Dessert inspiration SLUT*/
+/* ---------- Main content artikel 1 SLUT ---------- */
+
+
+/* ---------- Main content artikel 2 START ---------- */
+
+.flexcontainer_artikel3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.flexcontainer_tekst{
+    margin-top: 25px;
+    margin-right: 25px;
+}
+
+.flexcontainer_billeder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kagebilleder{
+    width: 250px;
+    margin-top: 50px;
+}
+
+.artikel2_h4{
+    color: #3A2416;
+    font-size: 20px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    margin-top: 35px;
+}
+
+.artikel2_p{
+    margin-left: 10px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+/* ---------- Main content artikel 2 SLUT ---------- */
+
+
+/* ---------- Main content artikel 3 START ---------- */
+
+.flexcontainer_maskiner{
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-right: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.maskine{
+    width: 350px;
+}
+
+.flexcontainer_billedemtekst{
+    display: flex;
+    flex-direction: column;
+}
+
+.billedtekst{
+    text-align: center;
+
+}
+
+.artikel3_h4{
+    margin-left: 10px;
+    color: #3A2416;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.artikel3_p{
+    margin-left: 10px;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.her_knap{
+    display: block;
+    font-family: 'Oswald';
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.her_knap a{
+    text-decoration: underline;
+    color: inherit;
+}
+
+.artikel3_outro{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 35px;
+    text-align: center;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+/* ---------- Main content artikel 3 SLUT ---------- */
+
+/* Footer START */
+
+footer{
+    margin-top: 100px;
+    background-color: #FFF7EF;
+    border: 3px #3A2416;
+    box-shadow: 0 0 10px 3px #3A2416;
+    z-index: 1;
+}
+
+.footer_h1{
+    text-align: center;
+    color: #2F4680;
+}
+
+.flexcontainer_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.some{
+    height: 50px;
+    margin: 5px;
+}
+
+.footer_h5{
+    text-align: center;
+    margin: 5px;
+    color: #2F4680;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.kontakt{
+    background: #2F4680;
+    color: #FFF7EF;
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Footer SLUT */
